@@ -9,8 +9,9 @@
     pattern: ['gulp-*', 'gulp.*', 'del']
   });
 
-  gulp.task('build', ['clean'], function() {
-    gulp.start(['copy']);
+  gulp.task('dev', function() {
+    gulp.watch('src/*.scss', ['styles:expaned']);
+    gulp.watch('src/*.php', ['copy']);
   });
 
 

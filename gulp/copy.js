@@ -9,10 +9,10 @@
     pattern: ['gulp-*', 'gulp.*', 'del']
   });
 
-  gulp.task('build', ['clean'], function() {
-    gulp.start(['copy']);
+  //test
+  gulp.task('copy',function() {
+    gulp.src(['src/**','!src/*.scss'])
+    .pipe(gulp.dest('dist'));
   });
-
-
 
 }());

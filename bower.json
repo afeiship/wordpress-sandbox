@@ -22,5 +22,10 @@
     "src",
     "gulp",
     "gulpfile.js"
-  ]
+  ],
+  "dependencies": {
+    "web-sass-reset": "afeiship/web-sass-reset",
+    "web-sassui-short-name": "afeiship/web-sassui-short-name",
+    "web-sass-mixins": "afeiship/web-sass-mixins"
+  }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Wordpress-sandbox
 Theme URI: https://wordpress.org/themes/yiqiping/
@@ -10,4 +11,404 @@ Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-backgr
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-*/body{color:#ccc}
+*/
+/**reset Start**/
+*,
+*:focus {
+  outline: none;
+  box-sizing: content-box; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased; }
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll; }
+
+body {
+  font: 62.5%/1.5 Tahoma, simsun, "宋体", Microsoft YaHei, Arial, "sans-serif"; }
+
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, hr,
+pre, form, fieldset, input, textarea, button,
+p, blockquote, th, td, s, b,
+menu {
+  margin: 0;
+  padding: 0; }
+
+/*html5 tag support*/
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary {
+  display: block; }
+
+fieldset, img, abbr, acronym, hr {
+  border: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show; }
+
+caption, th {
+  text-align: left; }
+
+address, caption, cite, dfn, th, var, i, s, em {
+  font-style: normal;
+  font-weight: normal; }
+
+s, ins {
+  text-decoration: none; }
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-weight: normal; }
+
+h1, h2, h3 {
+  font-size: 14px; }
+
+h4, h5, h6 {
+  font-size: 12px; }
+
+ul, ol, li {
+  padding-left: 0;
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%; }
+
+hr {
+  display: block;
+  height: 0;
+  border-top: 1px solid #cccccc; }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+input, select {
+  vertical-align: middle; }
+
+/**reset End**/
+/*border-radius Start*/
+/*border-radius End*/
+/*clearfix Start*/
+/*clearfix End*/
+/*filter Start*/
+/*filter End*/
+/*flip Start*/
+/*flip End*/
+/*height Start*/
+/*height End*/
+/*margin Start*/
+/*margin End*/
+/*padding Start*/
+/*padding End*/
+/*placeholder Start*/
+/*placeholder End*/
+/*size Start*/
+/*size End*/
+/*user-select Start*/
+/*user-select End*/
+/*width Start*/
+/*width End*/
+/*align Start*/
+.vat,
+.vat_ > * {
+  vertical-align: top; }
+
+.vab,
+.vab_ > * {
+  vertical-align: bottom; }
+
+.vam,
+.vam_ > * {
+  vertical-align: middle; }
+
+/*align End*/
+/*background Start*/
+.bgn {
+  background: none !important; }
+
+/*background End*/
+/* border Start*/
+.bdn {
+  border: none; }
+
+.bd0 {
+  border: 0; }
+
+.bd0n {
+  border: 0 none; }
+
+.bcc {
+  border-collapse: collapse; }
+
+/* border End*/
+/**clearfix Start**/
+/**
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ * 3. Reference:http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+.clfix:before, .lfix_:before, .rfix:before,
+.clfix:after,
+.lfix_:after,
+.rfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clfix:after, .lfix_:after, .rfix:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clfix, .lfix_, .rfix {
+  *zoom: 1; }
+
+/*normal way to clearfix*/
+.clearfix:after {
+  clear: both;
+  content: "\200B";
+  display: block;
+  height: 0; }
+
+.clearfix {
+  *zoom: 1; }
+
+/**clearfix  End**/
+.dib,
+.dib_ > * {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+.dtb {
+  display: table; }
+
+.dtbr {
+  display: table-row; }
+
+.dtbc,
+.dtbc_ > * {
+  display: table-cell;
+  *display: inline-block;
+  *zoom: 1; }
+
+.db,
+.db_ > * {
+  display: block; }
+
+.dn,
+[hidden] {
+  display: none; }
+
+.z,
+.z_ > * {
+  zoom: 1; }
+
+/**float Start**/
+.l,
+.l_ > * {
+  float: left; }
+
+.r,
+.r_ > * {
+  float: right; }
+
+.lfix_ > * {
+  float: left; }
+
+.rfix > * {
+  float: right; }
+
+/**float  End**/
+/**font Start**/
+.b {
+  font-weight: bold; }
+
+.n {
+  font-weight: normal;
+  font-style: normal; }
+
+.f0 {
+  font-size: 0; }
+
+/**font  End**/
+/**height Start**/
+.h0 {
+  height: 0 !important; }
+
+.max-h100 {
+  max-height: 100%; }
+
+.min-h100 {
+  min-height: 100%; }
+
+/**height  End**/
+/* margin Start */
+.auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+.m0 {
+  margin: 0; }
+
+.m0a {
+  margin: 0 auto; }
+
+/* margin End */
+/**overflow Start**/
+.ovh {
+  overflow: hidden; }
+
+.ovv {
+  overflow: visible; }
+
+.ovs {
+  overflow: scroll; }
+
+.ova {
+  overflow: auto; }
+
+.oz {
+  overflow: hidden;
+  zoom: 1; }
+
+/**overflow  End**/
+/**position Start**/
+.abs,
+.abs_ > * {
+  position: absolute; }
+
+.rel {
+  position: relative; }
+
+.fixed {
+  position: fixed; }
+
+.trbl0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.lr0 {
+  left: 0;
+  right: 0; }
+
+.tb0 {
+  top: 0;
+  bottom: 0; }
+
+.t0 {
+  top: 0; }
+
+.r0 {
+  right: 0; }
+
+.b0 {
+  bottom: 0; }
+
+.l0 {
+  left: 0; }
+
+.t5 {
+  top: 50%; }
+
+.r5 {
+  right: 50%; }
+
+.b5 {
+  bottom: 50%; }
+
+.l5 {
+  left: 50%; }
+
+.t100 {
+  top: 100%; }
+
+.r100 {
+  right: 100%; }
+
+.b100 {
+  bottom: 100%; }
+
+.l100 {
+  left: 100%; }
+
+/**position  End**/
+/**radius Start**/
+.radius-top-0 {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important; }
+
+.radius-right-0 {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important; }
+
+.radius-bottom-0 {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important; }
+
+.radius-left-0 {
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important; }
+
+.circle {
+  border-radius: 50% !important; }
+
+.rect {
+  border-radius: 0 !important; }
+
+/**radius  End**/
+/**width Start**/
+.w0 {
+  width: 0; }
+
+.w100, .wh100 {
+  width: 100%; }
+
+.h100, .wh100 {
+  height: 100%; }
+
+.max-w100 {
+  max-width: 100%; }
+
+.min-w100 {
+  min-width: 100%; }
+
+/**width  End**/
+body {
+  color: #f00; }

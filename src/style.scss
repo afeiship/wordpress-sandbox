@@ -11,7 +11,10 @@ Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-backgr
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+@import "../bower_components/web-sass-reset/dist/web-sass-reset.scss";
+@import "../bower_components/web-sass-mixins/dist/web-sass-mixins.scss";
+@import "../bower_components/web-sassui-short-name/dist/web-sassui-short-name.scss";
 
 body{
-  color:#ccc;
+  color:#f00;
 }

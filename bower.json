@@ -1,0 +1,26 @@
+{
+  "name": "wordpress-sandbox",
+  "description": "Wordpress theme sandbox.",
+  "main": "dist/wordpress-sandbox.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/wordpress-sandbox",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "gulp",
+    "gulpfile.js"
+  ]
+}
